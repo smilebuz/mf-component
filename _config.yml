@@ -1,0 +1,1 @@
+include: ["./src/.well-known", "./build/static/css/.well-known"]
