@@ -7,7 +7,8 @@ const webpackConfig = require(webpackConfigPath);
 const override = config => {
   config.plugins.push(new CopyWebpackPlugin({
     patterns: [
-      { from: "src/.well-known", to: "static/.well-known" },
+      { from: "src/.well-known", to: "static/css/.well-known" },
+      { from: "src/well-known", to: "static/css/well-known" },
     ],
   }));
   config.plugins.push(new ModuleFederationPlugin(require('../../modulefederation.config.js')));
